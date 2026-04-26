@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "data",
+        "routing",
+        "compliance",
+        "comms"
+      ]
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

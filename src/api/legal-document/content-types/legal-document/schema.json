@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "legal_documents",
+  "info": {
+    "singularName": "legal-document",
+    "pluralName": "legal-documents",
+    "displayName": "LegalDocument"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "version": {
+      "type": "string"
+    },
+    "effective_date": {
+      "type": "date"
+    },
+    "applies_to": {
+      "type": "enumeration",
+      "enum": [
+        "electacar",
+        "hkib",
+        "all"
+      ]
+    }
+  }
+}
